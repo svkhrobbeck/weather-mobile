@@ -1,8 +1,7 @@
 {
   "expo": {
-    "entryPoint": "./src/App.tsx",
-    "name": "loading-app",
-    "slug": "loading-app",
+    "name": "weather-mobile",
+    "slug": "weather-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
@@ -21,6 +20,14 @@
         "backgroundColor": "#ffffff"
       }
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "$(PRODUCT_NAME)ga joylashuvingizdan foydalanishga ruxsat bering"
+        }
+      ]
+    ],
     "web": {
       "favicon": "./src/assets/favicon.png"
     }
