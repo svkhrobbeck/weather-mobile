@@ -1,4 +1,4 @@
-# "Loading" React Native + Expo Application
+# "Weather Mobile" React Native + Expo Application
 
 Bu loyiha mening birinchi React Native Expo yordamida yaratilgan mobil ilovamdir. Ilova asosiy funksiyalarni va komponentlarni o‘z ichiga olgan oddiy mobil dasturdan iborat.
 
@@ -9,8 +9,8 @@ Loyihani o'z kompyuteringizga yuklab oling va quyidagi amallarni bajaring:
 ### 1. Repozitoriyani klonlash
 
 ```bash
-git clone https://github.com/svkhrobbeck/loading-app-rn.git
-cd loading-app-rn
+git clone https://github.com/svkhrobbeck/weather-mobile.git
+cd weather-mobile
 ```
 
 ### 2. Zaruriy paketlarni o‘rnatish
