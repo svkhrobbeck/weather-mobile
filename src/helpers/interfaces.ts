@@ -1,8 +1,12 @@
+import { weatherConditions } from "./constants";
+
 export interface IParams {
   lat?: number;
   lon?: number;
-  city?: string;
+  city?: string | null;
 }
+
+export type ICondition = keyof typeof weatherConditions;
 
 export interface IWeather {
   country: string;
@@ -20,26 +24,28 @@ export interface IWeather {
   };
   timezone: number;
   visibility: number;
-  weather: [
-    {
-      id: number;
-      title: {
-        uz: string;
-        oz: string;
-        en: string;
-        ru: string;
-      };
-      description: {
-        uz: string;
-        oz: string;
-        en: string;
-        ru: string;
-      };
-      icon: {
-        name: string;
-        path: string;
-      };
-    },
-  ];
+  weather:
+    | [
+        {
+          id: number;
+          title: {
+            uz: string;
+            oz: string;
+            en: string;
+            ru: string;
+          };
+          description: {
+            uz: string;
+            oz: string;
+            en: string;
+            ru: string;
+          };
+          icon: {
+            name: string;
+            path: string;
+          };
+        },
+      ]
+    | [];
   wind: { deg: number; speed: number };
 }

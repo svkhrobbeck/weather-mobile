@@ -3,14 +3,14 @@ import LottieView from "lottie-react-native";
 
 const Loader = () => {
   return (
-    <View style={styles.wrapper}>
+    <View style={styles.container}>
       <LottieView style={styles.lottie} source={require("../assets/loader.json")} autoPlay loop />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  wrapper: {
+  container: {
     flex: 1,
     backgroundColor: "#fdf6aa",
     justifyContent: "center",
