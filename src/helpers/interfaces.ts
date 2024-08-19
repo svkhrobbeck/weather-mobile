@@ -8,6 +8,18 @@ export interface IParams {
 
 export type ICondition = keyof typeof weatherConditions;
 
+export interface ILangs {
+  uz: string;
+  oz: string;
+  en: string;
+  ru: string;
+}
+
+export interface TypeIcon {
+  name: string;
+  path: string;
+}
+
 export interface IWeather {
   country: string;
   lat: number;
@@ -28,22 +40,9 @@ export interface IWeather {
     | [
         {
           id: number;
-          title: {
-            uz: string;
-            oz: string;
-            en: string;
-            ru: string;
-          };
-          description: {
-            uz: string;
-            oz: string;
-            en: string;
-            ru: string;
-          };
-          icon: {
-            name: string;
-            path: string;
-          };
+          title: ILangs;
+          description: ILangs;
+          icon: TypeIcon;
         },
       ]
     | [];
