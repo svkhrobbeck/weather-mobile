@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "weather-mobile",
+    "name": "Ob-havo Mobile",
     "slug": "weather-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,7 +18,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.svkhrobbeck.weathermobile"
     },
     "plugins": [
       [
@@ -30,6 +35,11 @@
     ],
     "web": {
       "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "464cb0e8-045c-4bc6-9e36-f82cdf458c4d"
+      }
     }
   }
 }
